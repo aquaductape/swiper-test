@@ -94,10 +94,10 @@ const Card: Component<TCard & { onClick: () => void }> = (props) => {
         ref={card}
         onClick={props.onClick}
       >
-        <div class="h-full transform-3d" ref={cardInner}>
+        <div class="h-full transform-3d select-none" ref={cardInner}>
           <div class="relative h-full translate-z-[-1px] rotate-y-180">
             <img
-              class="relative z-[1] overflow-hidden rounded-lg"
+              class="relative z-[1] overflow-hidden rounded-lg pointer-events-none"
               style={
                 {
                   // "box-shadow": "0px 3px 10px 1px #000",
@@ -129,7 +129,7 @@ const Card: Component<TCard & { onClick: () => void }> = (props) => {
             }}
           >
             <img
-              class="relative z-[1] overflow-hidden rounded-lg"
+              class="relative z-[1] overflow-hidden rounded-lg select-none pointer-events-none"
               style={
                 {
                   // "box-shadow": "0px 5px 8px 3px #001437",
@@ -150,7 +150,7 @@ const Card: Component<TCard & { onClick: () => void }> = (props) => {
                 }}
               ></div>
               <img
-                class="absolute inset-0 blur-sm scale-105 translate-y-1 overflow-hidden rounded-lg z-[-1]"
+                class="absolute inset-0 blur-sm scale-105 translate-y-1 overflow-hidden rounded-lg z-[-1] select-none pointer-events-none"
                 src={tcgCardBackImg}
                 draggable={false}
               />
