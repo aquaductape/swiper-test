@@ -109,7 +109,7 @@ const Card: Component<TCard & { onClick: () => void }> = (props) => {
               draggable={false}
             />
             <div
-              class="absolute inset-0 pointer-events-none rounded-lg h-[calc(100%_-_3px)] bg-[#000]"
+              class="absolute inset-0 pointer-events-none rounded-lg h-[calc(100%_-_3px)] translate-y-[3px] bg-[#000]"
               style={{
                 "box-shadow": "0px 0px 10px 1px #000",
                 // "box-shadow": "0px 3px 8px 1px #001437",
