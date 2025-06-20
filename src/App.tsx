@@ -3,7 +3,7 @@ import Cards from "./Cards";
 
 const App: Component = () => {
   return (
-    <div class="min-h-screen bg-[#233e68]">
+    <div class="min-h-[100svh] bg-[#233e68]">
       <Cards />
     </div>
   );
